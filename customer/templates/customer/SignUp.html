@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>SignUp</title>
+        <link rel="stylesheet" href="{% static 'employee/Sup.css' %}" type="text/css">
+        <script src="F.js"></script>
+
+</head>
+<body>
+
+<form class="Sup" onsubmit="return required()" method="POST">
+        {% csrf_token %}
+  <h1>SIGN UP</h1>
+  <label for="fname"></label>
+  <input type="text" id="fname" name="fname"  placeholder="Username">
+  <input type="email" name="email" placeholder="Enter your email_id">
+  <input type="password" name="pwd" placeholder="Create your password">
+  <input type="text" id="pnum" name="phone" placeholder="Phonenumber +91" pattern="^[0-9]{10}$" >
+ <input type="submit" value="CREATE">
+ <label for="terms">By creating an account,I accept the <a href="#-19">Terms & Conditions</a></label>
+</form>
+
+</body>
+</html>
+ 

@@ -1,0 +1,211 @@
+.header{
+background-image: linear-grad url('');
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+body{
+	margin: 0 auto;
+}
+.duo{
+
+	width:100%;
+	margin: 0 auto;
+}
+.section
+	{
+		position: sticky;
+		width:100%;	
+		padding-top: 30px;
+		background-color: red;
+		height: 5%;
+		
+	}
+	.section a
+	{
+	text-decoration: none;		
+	position: relative;	
+	color: whitesmoke;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight:400;
+	font-size: 30px;
+	}
+.section li
+{
+	display: inline;
+	list-style: none;	
+}
+.section li a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight:200;
+	font-size: 20px;
+	}
+	
+	.section li.login
+	{
+		position: absolute;
+		right: 500px;
+		padding-top: 1px;
+		
+	}
+	
+	.section li.sign_in
+	{
+		position: absolute;
+		right: 300px;
+		padding: 4px;
+		border: 2px solid whitesmoke;
+	}
+
+.section li.login a:hover
+{
+	color: grey;
+	transition-duration: .2s;
+}
+.section li.sign_in a:hover
+{
+	transition-duration: .3s;
+    border-color: rgba(158, 145, 145, 0.952);
+}
+
+
+
+.menu{
+position: relative;
+float: right;
+padding: 20px;
+width: 40%;
+height: 40%;
+padding-top: 50px;
+box-sizing: border-box;
+background-image:url('https://freedesignfile.com/upload/2017/03/Rich-and-nutritious-breakfast-with-HD-picture-07.jpg');
+}
+
+.menu li{
+list-style: none;
+}
+.menu li a{
+color: #fff;
+font-family: 'Open Sans', sans-serif;
+font-weight:800;
+font-size: 30px;
+position: relative;
+}
+
+.menu a:hover::before {
+width: 15px;
+height: 5px;
+}
+
+.menu a::before{
+background: #fff;
+bottom: 6px;
+content: "";
+display: block;
+left: -17px;
+height: 1px;
+position: absolute;
+transition: all .3s ease-out;
+}
+.space
+{
+float: left;
+width: 60%;	
+height: 40px;
+background:white;
+}
+
+.blur
+{
+		background-image: url("file:///C:/Users/Samrat/Downloads/paneer-tikka-indian-starters-recipes.jpg");
+		height: 100%;
+		filter: blur(8px);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+.icons
+{
+	position: absolute;
+	bottom: 150px;
+	width:100%;
+	height: 257px;
+	background-color: rgb(61, 26, 26);
+}
+.icon-1
+{
+	position: relative;
+	top: 5px;
+	left: 20px;
+}
+.icon-2
+{
+	position: absolute;
+	right: 700px;
+	top: 5px;
+}
+.icon-3
+{
+	position: absolute;
+	right: 100px;
+	top: 5px;
+}
+.p-2
+{
+	position: absolute;
+	bottom: 10px;
+	color: white;
+	font-family: sans-serif;
+}
+.p-3
+{
+	position: absolute;
+	bottom: -1px;
+	right: 600px;
+	color: white;
+	font-family: sans-serif;
+}
+.p-1
+{
+	position: absolute;
+	bottom: -1px;
+	right: 0px;
+	color: white;
+	font-family: sans-serif;
+}
+
+.end
+{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 150px;
+	background-color: rgb(7, 0, 0);
+
+}
+
+
+.End
+ {
+	 width: 100%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+  }
+  
+  .End td, .End th {
+	padding: 8px;
+		color: white;
+  }
+
+  .End th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgb(0, 0, 0);
+	color: white;
+  }
+
+
