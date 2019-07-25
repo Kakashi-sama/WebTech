@@ -1,13 +1,21 @@
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
         <title>Foodiez..</title>
-        <script src="F.js"></script>
-        <link rel="stylesheet" href="Main.css">
+        <link rel="stylesheet" href="{% static 'customer/Main.css' %}" type="text/css">
       </head>
       <body>
+        <div class="top">
+                <a href="{% url 'home' %}"><i>Foodiez..</i></a>
+                Welcome,{{ username_obj.username }}
+                <li class="logout"><a href="{% url 'home' %}">Logout</a></li>
+            </div>
         <form class="menu">
-        
+          {% for item in Menu %}
+          <input type="checkbox" name="name">{{Menu.item}}
+          <br>
+         {% endfor %}
         </form>
       </body>
 </html>

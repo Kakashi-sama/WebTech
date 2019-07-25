@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Let's Get Going</title>
-    <link rel="stylesheet" href="{% static 'employee/login_style.css' %}">
+    <link rel="stylesheet" href="{% static 'customer/login_style.css' %}">
   </head>
   <body>
 
-<form class="box" >
+<form class="box" method="POST">
+  {% csrf_token %}
 
   <h1>Login</h1>
-  <input type="text" title="Create a unique name" placeholder="User name" required>
-  <input type="password" id="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Passw***"><span id="m1"></span>
+  <input type="text" title="Create a unique name" placeholder="User name" name="username" required>
+  <input type="password" id="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Passw***" name="password"><span id="m1"></span>
   <input type="submit" id="submit" value="Login">
+  <p style="color:red">{{ message }}</p>
 
-  <a href="file:///C:/Users/Samrat/Desktop/project/SignUp.html" style="color:black">Forget Password??</a>
+  <a href="{% url 'signup' %}" style="color:black">Forget Password??</a>
 
 </form>
-
 
   </body>
 </html>
